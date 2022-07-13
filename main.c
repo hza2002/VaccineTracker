@@ -29,31 +29,44 @@ int main() {
               int flag = 1;
               while (flag) {
                 switch (Menu1_1()) {
-                  case 1:
-                    if (!AddDoctor()) {
+                  case 1: {
+                    Doctor new_doctor;
+                    printf("请输入需要添加的医生ID: ");
+                    scanf("%lld", &new_doctor.id);
+                    printf("请输入需要添加的医生姓名: ");
+                    scanf("%s", new_doctor.name);
+                    printf("请输入需要添加的医生所属医院: ");
+                    scanf("%s", new_doctor.hospital);
+                    if (AddDoctor(new_doctor) == -1) {
                       printf("添加失败\n");
                     } else {
                       printf("添加成功\n");
                     }
-                    break;
-                  case 2:
-                    if (!DeleteDoctor()) {
+                  } break;
+                  case 2: {
+                    printf("请输入需要删除的医生ID: ");
+                    long long id;
+                    scanf("%lld", &id);
+                    if (DeleteDoctor(id) == -1) {
                       printf("删除失败\n");
                     } else {
                       printf("删除成功\n");
                     }
-                    break;
+                  } break;
                   case 3: {
                     printf("请输入需要查询的医生ID: ");
                     long long id;
                     scanf("%lld", &id);
-                    SearchDoctor(id);
+                    int index = SearchDoctor(id);
+                    if (index == -1) {
+                      printf("不存在该医生\n");
+                    } else {
+                      printf("ID:%lld 姓名:%s 所属医院:%s\n", doctors[index].id,
+                             doctors[index].name, doctors[index].hospital);
+                    }
                   } break;
                   case 4: {
-                    printf("请输入需要修改的医生ID: ");
-                    long long id;
-                    scanf("%lld", &id);
-                    EditDoctor(id);
+                    EditDoctor();
                   } break;
                   case 5:
                     flag = 0;
@@ -69,31 +82,45 @@ int main() {
               int flag = 1;
               while (flag) {
                 switch (Menu1_2()) {
-                  case 1:
-                    if (!AddPerson()) {
+                  case 1: {
+                    Person new_person;
+                    printf("请输入需要添加的接种者身份证号: ");
+                    scanf("%s", new_person.id);
+                    printf("请输入需要添加的接种者姓名: ");
+                    scanf("%s", new_person.name);
+                    printf("请输入需要添加的接种者联系电话: ");
+                    scanf("%lld", &new_person.phone);
+                    if (AddPerson(new_person) == -1) {
                       printf("添加失败\n");
                     } else {
                       printf("添加成功\n");
                     }
-                    break;
-                  case 2:
-                    if (!DeletePerson()) {
+                  } break;
+                  case 2: {
+                    printf("请输入需要删除的接种者身份证号: ");
+                    char id[20];
+                    scanf("%s", id);
+                    if (DeletePerson(id) == -1) {
                       printf("删除失败\n");
                     } else {
                       printf("删除成功\n");
                     }
-                    break;
+                  } break;
                   case 3: {
                     printf("请输入需要查询的接种者身份证号: ");
                     char id[20];
                     scanf("%s", id);
-                    SearchPerson(id);
+                    int index = SearchPerson(id);
+                    if (index == -1) {
+                      printf("不存在该医生\n");
+                    } else {
+                      printf("身份证号:%s 姓名：%s 联系方式:%lld\n",
+                             persons[index].id, persons[index].name,
+                             persons[index].phone);
+                    }
                   } break;
                   case 4: {
-                    printf("请输入需要修改的接种者身份证号: ");
-                    char id[20];
-                    scanf("%s", id);
-                    EditPerson(id);
+                    EditPerson();
                   } break;
                   case 5:
                     flag = 0;
