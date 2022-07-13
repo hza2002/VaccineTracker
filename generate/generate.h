@@ -17,7 +17,7 @@
 // 医生信息
 typedef struct {
   long long id;       // 医生唯一ID编号
-  char name[30];      // 姓名
+  char name[20];      // 姓名
   char hospital[80];  // 所属医院
 } Doctor;
 Doctor doctors[DOCTORMAX];
@@ -25,7 +25,7 @@ Doctor doctors[DOCTORMAX];
 // 接种者信息
 typedef struct {
   char id[20];    // 身份证号
-  char name[30];  // 姓名
+  char name[20];  // 姓名
   int gender;     // 性别，0代表男性，1代表女性
 } Person;
 Person persons[PERSONMAX];
