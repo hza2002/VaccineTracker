@@ -17,16 +17,16 @@ int ReadDoctor();
 // 将结构体写入文件，成功返回0，失败-1
 int WriteDoctor();
 
+// 查找医生信息，成功返回下标，失败-1
+int SearchDoctor(long long id);
+
 // 增加医生信息，成功返回0，失败-1
-int AddDoctor();
+int AddDoctor(Doctor new_doctor);
 
 // 删除医生信息，成功返回0，失败-1
-int DeleteDoctor();
-
-// 查找医生信息
-void SearchDoctor(long long id);
+int DeleteDoctor(long long id);
 
 // 修改医生信息
-void EditDoctor(long long id);
+void EditDoctor();
 
 #endif
