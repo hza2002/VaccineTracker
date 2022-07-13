@@ -65,7 +65,7 @@ int AddPerson(Person new_person) {
     WritePerson();
   }
   return 0;
-};
+}
 
 // 删除接种者信息，成功返回0，失败-1
 int DeletePerson(char id[]) {
@@ -89,7 +89,7 @@ int DeletePerson(char id[]) {
     ReadPerson();
   }
   return 0;
-};
+}
 
 // 修改接种者信息
 void EditPerson() {
@@ -108,6 +108,6 @@ void EditPerson() {
     printf("请输入修改后的接种者联系电话: ");
     scanf("%lld", &persons[index].phone);
     WritePerson();
-    printf("添加成功\n");
+    printf("修改成功\n");
   }
 }
