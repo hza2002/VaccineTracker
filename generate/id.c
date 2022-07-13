@@ -17,7 +17,6 @@ void GetKeyNum(char id[]) {
   int w[18] = {7, 9, 10, 5,  8, 4, 2, 1, 6,
                3, 7, 9,  10, 5, 8, 4, 2, 1};  // w是位权值数组
   int sum = 0;
-  int flag = 1;
   for (int i = 0; i < 17; i++)  //前17位的位权值相加
   {
     sum += w[i] * (id[i] - 48);
