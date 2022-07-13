@@ -22,13 +22,13 @@ int ReadRecord();
 // 将结构体写入文件，成功返回0，失败-1
 int WriteRecord();
 
+// 查找接种信息
+int SearchRecord(long long id);
+
 // 增加接种信息，成功返回0，失败-1
-int AddRecord();
+int AddRecord(Record new_record);
 
 // 删除接种信息，成功返回0，失败-1
-int DeleteRecord();
-
-// 查找接种信息
-void SearchRecord(char person_id[]);
+int DeleteRecord(long long id);
 
 #endif
