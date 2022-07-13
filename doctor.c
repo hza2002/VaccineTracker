@@ -108,6 +108,6 @@ void EditDoctor() {
     printf("请输入修改后的医生所属医院: ");
     scanf("%s", doctors[index].hospital);
     WriteDoctor();
-    printf("添加成功\n");
+    printf("修改成功\n");
   }
 }
