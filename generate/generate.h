@@ -24,9 +24,9 @@ Doctor doctors[DOCTORMAX];
 
 // 接种者信息
 typedef struct {
-  char id[20];    // 身份证号
-  char name[20];  // 姓名
-  int gender;     // 性别，0代表男性，1代表女性
+  char id[20];      // 身份证号
+  char name[20];    // 姓名
+  long long phone;  // 联系电话
 } Person;
 Person persons[PERSONMAX];
 

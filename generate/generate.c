@@ -247,14 +247,15 @@ int PersonDataGenerate() {
     printf("打开文件%s错误\n", PersonPath);
     return -1;
   }
-  fprintf(fp, "id,name,gender\n");  // 写入第一行（标题）的内容
+  fprintf(fp, "id,name,phone\n");  // 写入第一行（标题）的内容
   for (int i = 0; i < PersonNum; ++i) {
     RandomId(id, i);
     strcpy(persons[person_num].id, id);
     strcpy(persons[person_num].name, person_list[rand() % PersonNum]);
-    persons[person_num].gender = rand() % 2;
-    fprintf(fp, "%s,%s,%d\n", persons[person_num].id, persons[person_num].name,
-            persons[person_num].gender);
+    persons[person_num].phone =
+        1e10 + (rand() % 10 + 30) * 1e8 + rand() % (int)1e8;
+    fprintf(fp, "%s,%s,%lld\n", persons[person_num].id,
+            persons[person_num].name, persons[person_num].phone);
     person_num++;
   }  // 逐行获取结构体内容
   fclose(fp);
