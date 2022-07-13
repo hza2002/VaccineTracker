@@ -11,3 +11,7 @@
 .vscode/tasks.json
 temp.c
 .DS_Store
+generate/.vscode/c_cpp_properties.json
+generate/.vscode/launch.json
+generate/.vscode/settings.json
+generate/.vscode/tasks.json
