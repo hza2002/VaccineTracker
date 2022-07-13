@@ -1,15 +1,18 @@
 #ifndef _GENERATE_H
 #define _GENERATE_H
 
+// 限制结构体大小
 #define DOCTORMAX 5000
 #define PERSONMAX 5000
 #define VACCINEMAX 5000
 #define RECORDMAX 5000
-#define HospitalNum 14
-#define DoctorNum 53
-#define PersonNum 157
-#define VaccineNum 200
-#define VACCINENUM 7  // 疫苗种数
+
+// 实际数量限制
+#define HospitalNum 14   // 医院数量
+#define DoctorNum 261    // 医生数量
+#define PersonNum 917    // 接种人员数量
+#define VaccineNum 2000  // 疫苗数量
+#define VACCINENUM 7     // 疫苗种数
 
 // 医生信息
 typedef struct {
