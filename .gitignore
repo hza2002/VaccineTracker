@@ -9,7 +9,6 @@
 .vscode/launch.json
 .vscode/settings.json
 .vscode/tasks.json
-temp.c
 .DS_Store
 generate/.vscode/c_cpp_properties.json
 generate/.vscode/launch.json
