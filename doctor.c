@@ -21,8 +21,7 @@ int ReadDoctor() {
     fscanf(fp, "%lld,%[^,],%s", &doctors[doctor_num].id,
            doctors[doctor_num].name, doctors[doctor_num].hospital);
     doctor_num++;
-  }              // 逐行获取结构体内容
-  doctor_num--;  // 最后一行为空行，舍去
+  }  // 逐行获取结构体内容
   fclose(fp);
   return 0;
 }
@@ -71,7 +70,7 @@ int AddDoctor(Doctor new_doctor) {
 // 删除医生信息，成功返回0，失败-1
 int DeleteDoctor(long long id) {
   int index = SearchDoctor(id);
-  if (SearchDoctor(id) == -1) {
+  if (index == -1) {
     return -1;
   } else {
     FILE* fp;  // 打开数据文件
