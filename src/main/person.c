@@ -1,9 +1,9 @@
-#include "main/person.h"
-
 #include <stdio.h>
 #include <string.h>
 
-char *PersonPath = "data/person.csv";
+#include "main/person.h"
+#include "shared/data.h"
+
 int person_num = 0;  // 接种者数量
 
 // 读取 PersonPath 中的数据到结构体，成功返回0，失败-1

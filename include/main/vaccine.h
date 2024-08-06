@@ -1,5 +1,5 @@
-#ifndef _VACCINE_H
-#define _VACCINE_H
+#ifndef VACCINE_H
+#define VACCINE_H
 
 #define VACCINEMAX 5000
 #define VACCINENUM 7  // 疫苗种数

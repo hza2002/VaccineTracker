@@ -1,13 +1,13 @@
-#ifndef _DOCTOR_H
-#define _DOCTOR_H
+#ifndef DOCTOR_H
+#define DOCTOR_H
 
 #define DOCTORMAX 5000
 
 // 医生信息
 typedef struct {
-  long long id;       // 医生唯一ID编号
-  char name[20];      // 姓名
-  char hospital[80];  // 所属医院
+    long long id;       // 医生唯一ID编号
+    char name[20];      // 姓名
+    char hospital[80];  // 所属医院
 } Doctor;
 Doctor doctors[DOCTORMAX];
 

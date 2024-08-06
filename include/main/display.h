@@ -1,5 +1,5 @@
-#ifndef _DISPLAY_H
-#define _DISPLAY_H
+#ifndef DISPLAY_H
+#define DISPLAY_H
 
 int Menu0();    // 初始菜单
 int Menu1();    // 菜单1

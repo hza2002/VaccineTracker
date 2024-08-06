@@ -1,9 +1,9 @@
-#include "main/vaccine.h"
-
 #include <stdio.h>
 #include <string.h>
 
-char *VaccinePath = "../../data/vaccine.csv";
+#include "main/vaccine.h"
+#include "shared/data.h"
+
 char vaccine_type[VACCINENUM][30] = {
         "北京生物新冠疫苗", "科兴中维新冠疫苗", "武汉生物新冠疫苗",
         "康希诺新冠疫苗", "智飞新冠疫苗", "康泰新冠疫苗",

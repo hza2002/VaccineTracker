@@ -1,5 +1,5 @@
-#ifndef _GENERATE_H
-#define _GENERATE_H
+#ifndef GENERATE_H
+#define GENERATE_H
 
 // 限制结构体大小
 #define DOCTORMAX 5000

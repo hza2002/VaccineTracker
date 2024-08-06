@@ -1,5 +1,5 @@
-#ifndef _SNOWFLAKE_H
-#define _SNOWFLAKE_H
+#ifndef SNOWFLAKE_H
+#define SNOWFLAKE_H
 
 #include <stdlib.h>
 #include <sys/time.h>

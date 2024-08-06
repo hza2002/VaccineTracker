@@ -1,9 +1,9 @@
-#include "main/doctor.h"
-
 #include <stdio.h>
 #include <string.h>
 
-char *DoctorPath = "../../data/doctor.csv";
+#include "main/doctor.h"
+#include "shared/data.h"
+
 int doctor_num = 0;  // 医生数量
 
 // 读取 DoctorPath 中的数据到结构体，成功返回0，失败-1

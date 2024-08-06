@@ -7,11 +7,7 @@
 
 #include "generator/id.h"
 #include "shared/snowflake.h"
-
-char *DoctorPath = "../data/doctor.csv";
-char *PersonPath = "../data/person.csv";
-char *VaccinePath = "../data/vaccine.csv";
-char *RecordPath = "../data/record.csv";
+#include "shared/data.h"
 
 int doctor_num = 0;   // 医生数量
 int person_num = 0;   // 接种者数量

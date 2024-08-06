@@ -1,13 +1,12 @@
-#include "main/record.h"
-
 #include <stdio.h>
 #include <string.h>
 
 #include "main/doctor.h"
 #include "main/person.h"
 #include "main/vaccine.h"
+#include "main/record.h"
+#include "shared/data.h"
 
-char *RecordPath = "../../data/record.csv";
 int record_num = 0;  // 接种信息数量
 
 // 读取 RecordPath 中的数据到结构体，成功返回0，失败-1

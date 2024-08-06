@@ -1,5 +1,5 @@
-#ifndef _PERSON_H
-#define _PERSON_H
+#ifndef PERSON_H
+#define PERSON_H
 
 #define PERSONMAX 5000
 

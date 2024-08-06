@@ -1,5 +1,5 @@
-#ifndef _RECORD_H
-#define _RECORD_H
+#ifndef RECORD_H
+#define RECORD_H
 
 #define RECORDMAX 5000
 

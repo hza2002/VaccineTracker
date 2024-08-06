@@ -1,7 +1,7 @@
 //by hhr
 
-#ifndef _ID_H
-#define _ID_H
+#ifndef ID_H
+#define ID_H
 
 char id[20];
 
